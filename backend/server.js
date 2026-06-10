@@ -22,6 +22,10 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// 3. API Router Mounts
+app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
+
 // 4. Default Base Route
 app.get('/', (req, res) => {
   res.json({
