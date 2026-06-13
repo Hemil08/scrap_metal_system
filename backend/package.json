@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "scrap-metal-backend",
   "version": "1.0.0",
   "description": "REST API and AI classification engine for Scrap Metal Management System",
   "main": "server.js",
@@ -14,18 +14,20 @@
     "express",
     "mongoose"
   ],
-  "author": "",
+  "author": "Antigravity",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.0",
-    "multer": "^2.1.1"
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.1",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
-    "mongodb-memory-server": "^11.2.0"
+    "mongodb-memory-server": "^9.1.6"
   }
 }

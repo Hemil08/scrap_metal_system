@@ -32,6 +32,7 @@ const connectDB = async () => {
 };
 
 // Seeding standard datasets for demonstration purposes
+
 const seedDatabase = async () => {
   const User = mongoose.model('User', require('../models/User').schema);
   const ScrapRecord = mongoose.model('ScrapRecord', require('../models/ScrapRecord').schema);
