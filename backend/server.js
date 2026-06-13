@@ -22,6 +22,9 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static uploaded images
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 // 3. API Router Mounts
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
