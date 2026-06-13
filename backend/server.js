@@ -29,6 +29,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/scrap', require('./routes/scrapRoutes'));
+app.use('/api/inventory', require('./routes/inventoryRoutes'))
 
 // 4. Default Base Route
 app.get('/', (req, res) => {
