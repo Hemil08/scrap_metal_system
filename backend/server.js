@@ -25,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 // 3. API Router Mounts
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/scrap', require('./routes/scrapRoutes'));
 
 // 4. Default Base Route
 app.get('/', (req, res) => {
