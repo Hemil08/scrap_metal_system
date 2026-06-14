@@ -49,6 +49,18 @@ export const authAPI = {
   getProfile: () => api.get('/auth/profile')
 };
 
+// Scrap records endpoints
+export const scrapAPI = {
+  getRecords: (params) => api.get('/scrap', { params }),
+  createRecord: (formData) => api.post('/scrap', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  }),
+  updateRecord: (id, formData) => api.put(`/scrap/${id}`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  }),
+  deleteRecord: (id) => api.delete(`/scrap/${id}`)
+};
+
 // User Management endpoints (Admin only)
 export const usersAPI = {
   getUsers: () => api.get('/users'),
@@ -56,6 +68,8 @@ export const usersAPI = {
   updateUser: (id, userData) => api.put(`/users/${id}`, userData),
   deleteUser: (id) => api.delete(`/users/${id}`)
 };
+
+
 
 export default api;
 export { API_BASE_URL };
