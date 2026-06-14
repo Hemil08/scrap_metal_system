@@ -61,6 +61,12 @@ export const scrapAPI = {
   deleteRecord: (id) => api.delete(`/scrap/${id}`)
 };
 
+// Inventory endpoints
+export const inventoryAPI = {
+  getInventory: () => api.get('/inventory'),
+  updateStock: (id, quantity) => api.put(`/inventory/${id}`, { quantity })
+};
+
 // User Management endpoints (Admin only)
 export const usersAPI = {
   getUsers: () => api.get('/users'),
@@ -68,8 +74,6 @@ export const usersAPI = {
   updateUser: (id, userData) => api.put(`/users/${id}`, userData),
   deleteUser: (id) => api.delete(`/users/${id}`)
 };
-
-
 
 export default api;
 export { API_BASE_URL };

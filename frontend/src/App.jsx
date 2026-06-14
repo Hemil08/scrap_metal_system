@@ -22,7 +22,18 @@ const App = () => {
         }
       />
 
-      
+      <Route
+        path="/inventory"
+        element={
+          <ProtectedRoute allowedRoles={['Admin', 'Manager', 'Worker']}>
+            <DashboardLayout>
+              <Inventory />
+            </DashboardLayout>
+          </ProtectedRoute>
+        }
+      />
+
+
       
     </Routes>
   )
