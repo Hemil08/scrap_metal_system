@@ -11,6 +11,18 @@ const App = () => {
       {/* Public Routes */}
       <Route path="/login" element={<Login />} />
 
+      <Route
+        path="/scrap"
+        element={
+          <ProtectedRoute allowedRoles={['Admin', 'Manager', 'Worker']}>
+            <DashboardLayout>
+              <ScrapManagement />
+            </DashboardLayout>
+          </ProtectedRoute>
+        }
+      />
+
+      
       
     </Routes>
   )
