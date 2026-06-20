@@ -67,6 +67,13 @@ export const inventoryAPI = {
   updateStock: (id, quantity) => api.put(`/inventory/${id}`, { quantity })
 };
 
+// Standalone AI endpoints
+export const aiAPI = {
+  predict: (formData) => api.post('/ai/predict', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  })
+};
+
 // User Management endpoints (Admin only)
 export const usersAPI = {
   getUsers: () => api.get('/users'),
