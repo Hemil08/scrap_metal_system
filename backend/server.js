@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const dotenv = require('dotenv');
+
 const connectDB = async () => {
   const cdb = require('./config/db');
   await cdb();
@@ -27,9 +28,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // 3. API Router Mounts
 app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/scrap', require('./routes/scrapRoutes'));
 app.use('/api/inventory', require('./routes/inventoryRoutes'))
+app.use('/api/sales', require('./routes/salesRoutes'))
+app.use('/api/users', require('./routes/userRoutes'));
 
 // 4. Default Base Route
 app.get('/', (req, res) => {

@@ -16,7 +16,7 @@ const connectDB = async () => {
       } catch (err) {
         console.error('--- [DATABASE] Failed to initialize MongoMemoryServer:', err.message);
         console.log('--- [DATABASE] Falling back to standard local MongoDB port... ---');
-        dbUri = 'mongodb://127.0.0.1:27017/scrap_metal_db';
+        // dbUri = 'mongodb://127.0.0.1:27017/scrap_metal_db';
       }
     }
 
