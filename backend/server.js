@@ -31,6 +31,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/scrap', require('./routes/scrapRoutes'));
 app.use('/api/inventory', require('./routes/inventoryRoutes'))
 app.use('/api/sales', require('./routes/salesRoutes'))
+app.use('/api/ai', require('./routes/aiRoutes'))
 app.use('/api/users', require('./routes/userRoutes'));
 
 // 4. Default Base Route
