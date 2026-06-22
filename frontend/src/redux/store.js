@@ -7,7 +7,8 @@ export const store = configureStore({
   reducer: {
     auth: authReducer,
     scrap: scrapReducer,
-    inventory: inventoryReducer
+    inventory: inventoryReducer,
+    sales: salesReducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

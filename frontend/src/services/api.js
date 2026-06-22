@@ -67,6 +67,12 @@ export const inventoryAPI = {
   updateStock: (id, quantity) => api.put(`/inventory/${id}`, { quantity })
 };
 
+// Sales endpoints
+export const salesAPI = {
+  getSales: () => api.get('/sales'),
+  createSale: (saleData) => api.post('/sales', saleData)
+};
+
 // Standalone AI endpoints
 export const aiAPI = {
   predict: (formData) => api.post('/ai/predict', formData, {
