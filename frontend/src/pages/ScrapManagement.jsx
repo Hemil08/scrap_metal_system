@@ -6,7 +6,7 @@ import {
   editScrapRecord,
   removeScrapRecord
 } from '../redux/scrapSlice';
-import { fetchInventroy } from '../redux/inventorySlice'
+import { fetchInventory } from '../redux/inventorySlice'
 import {
   Plus,
   Edit2,
