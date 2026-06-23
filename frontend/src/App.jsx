@@ -5,11 +5,13 @@ import DashboardLayout from './layouts/DashboardLayout';
 
 // Pages
 import Login from './pages/Login';
-
+import Dashboard from './pages/Dashboard';
 import ScrapManagement from './pages/ScrapManagement';
 import Inventory from './pages/Inventory';
 import AIClassification from './pages/AIClassification';
+import WorkflowTracking from './pages/WorkflowTracking';
 import SalesManagement from './pages/SalesManagement'
+import UserManagement from './pages/UserManagement';
 
 
 const App = () => {
