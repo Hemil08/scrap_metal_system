@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import authReducer from './authSlice';
 import scrapReducer from './scrapSlice'
 import inventoryReducer from './inventorySlice'
+import salesReducer from './salesSlice'
 
 export const store = configureStore({
   reducer: {

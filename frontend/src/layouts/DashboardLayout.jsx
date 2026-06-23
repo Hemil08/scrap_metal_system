@@ -3,14 +3,14 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout } from '../redux/authSlice'
 import {
-    LaoutDashboard,
+    LayoutDashboard,
     Recycle,
     Boxes,
     Cpu,
     Route,
     DollarSign,
     Users,
-    Logout,
+    LogOut,
     Menu,
     X,
     UserCheck
