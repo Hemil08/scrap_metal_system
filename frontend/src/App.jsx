@@ -87,6 +87,17 @@ const App = () => {
         }
       />
 
+      <Route
+        path="/users"
+        element={
+          <ProtectedRoute allowedRoles={['Admin']}>
+            <DashboardLayout>
+              <UserManagement />
+            </DashboardLayout>
+          </ProtectedRoute>
+        }
+      />
+
       {/* Fallbacks */}
       <Route path="/" element={<Navigate to="/dashboard" replace />} />
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
