@@ -1,9 +1,11 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoutes';
+import DashboardLayout from './layouts/DashboardLayout';
 
 // Pages
 import Login from './pages/Login';
+
 import ScrapManagement from './pages/ScrapManagement';
 import Inventory from './pages/Inventory';
 import AIClassification from './pages/AIClassification';
