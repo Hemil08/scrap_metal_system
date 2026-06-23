@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import ScrapManagement from './pages/ScrapManagement';
 import Inventory from './pages/Inventory';
 import AIClassification from './pages/AIClassification';
+import SalesManagement from './pages/SalesManagement'
 
 
 const App = () => {
@@ -54,6 +55,17 @@ const App = () => {
           <ProtectedRoute allowedRoles={['Admin', 'Manager', 'Worker']}>
             <DashboardLayout>
               <WorkflowTracking />
+            </DashboardLayout>
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/sales"
+        element={
+          <ProtectedRoute allowedRoles={['Admin', 'Manager']}>
+            <DashboardLayout>
+              <SalesManagement />
             </DashboardLayout>
           </ProtectedRoute>
         }

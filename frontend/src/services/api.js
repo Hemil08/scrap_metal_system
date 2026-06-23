@@ -41,7 +41,6 @@ api.interceptors.response.use(
   }
 );
 
-
 // Auth endpoints
 export const authAPI = {
   register: (userData) => api.post('/auth/register', userData),

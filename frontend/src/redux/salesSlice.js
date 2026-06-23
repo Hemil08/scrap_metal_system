@@ -85,4 +85,4 @@ const salesSlice = createSlice({
 })
 
 export const { clearSalesError } = salesSlice.actions;
-export default salesSlice.reducer;
+export default salesSlice.reducer
