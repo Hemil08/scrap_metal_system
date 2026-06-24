@@ -1,4 +1,5 @@
 const API_BASE_URL = 'http://localhost:5001/api';
+const FILES_BASE_URL = 'http://localhost:5001';
 
 import axios from 'axios';
 
@@ -88,4 +89,4 @@ export const usersAPI = {
 };
 
 export default api;
-export { API_BASE_URL };
+export { API_BASE_URL, FILES_BASE_URL };

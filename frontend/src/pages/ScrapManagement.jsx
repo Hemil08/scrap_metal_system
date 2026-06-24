@@ -22,7 +22,7 @@ import {
   Truck,
   Image as ImageIcon
 } from 'lucide-react';
-import { API_BASE_URL } from '../services/api';
+import { FILES_BASE_URL } from '../services/api';
 
 const ScrapManagement = () => {
   const dispatch = useDispatch();
@@ -136,7 +136,7 @@ const ScrapManagement = () => {
     setStatus(record.status);
     setMetalType(record.metalType);
     if (record.image) {
-      setPreviewUrl(`http://localhost:5000${record.image}`);
+      setPreviewUrl(`${FILES_BASE_URL}${record.image}`);
     }
     setIsEditOpen(true);
   };
@@ -303,7 +303,7 @@ const ScrapManagement = () => {
                       {record.image ? (
                         <div className="w-12 h-12 rounded-lg border border-slate-800 bg-slate-950 overflow-hidden relative">
                           <img
-                            src={`http://localhost:5000${record.image}`}
+                            src={`${FILES_BASE_URL}${record.image}`}
                             alt="scrap thumbnail"
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                           />
