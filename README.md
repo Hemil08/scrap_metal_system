@@ -13,6 +13,10 @@ The UI follows a dark, industrial design language using **React 19**, **Tailwi
 
 ---
 
+## Deployment Link
+
+- Live Demo :- https://scrap-metal-system.onrender.com 
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
