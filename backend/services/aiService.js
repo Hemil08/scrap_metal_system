@@ -122,6 +122,7 @@ const getDeterministicVisualPrediction = (imagePath) => {
         probability: parseFloat(confidence.toFixed(4)),
       };
     }
+    
 
     // 5. Hash-based fallback based on filename (gives consistent prediction for the same image)
     const baseName = path.basename(imagePath).toLowerCase();
