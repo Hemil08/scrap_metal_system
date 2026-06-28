@@ -1,5 +1,5 @@
-const API_BASE_URL = 'https://scrap-metal-system.onrender.com/api';
-const FILES_BASE_URL = 'https://scrap-metal-system.onrender.com/';
+const API_BASE_URL = '/api';
+const FILES_BASE_URL = '/';
 
 import axios from 'axios';
 
